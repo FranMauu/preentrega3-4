@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descubre nuestra selección de pinturas profesionales para automóviles en CEMA." />
+    <meta name="keywords" content="pinturas, automotriz, CEMA, pinturas profesionales" />
+    <title>Pinturas - Taller Automotriz CEMA</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets\scss\style.css" />
+    <style>
+        /* Estilos para el menú hamburguesa */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: white;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px; /* Ajusta según la altura de tu header */
+                left: 0;
+            }
+
+            .nav-list.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nuestra Selección De Pinturas</h1>
+    </header>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav nav-list">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="repuestos.html">Repuestos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="trabajos_recientes.html">Trabajos Recientes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="pinturas.html">Pinturas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Pinturas</h2>
+            <p>Descubre nuestra colección de pinturas profesionales.</p>
+        </section>
+    </main>
+    <video class="pinturasvideo" controls width="50%" loop autoplay>
+        <source src="../video/ECOPlast.mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+    </video>
+    <footer>
+        <h4>&copy; 2024 CEMA. Todos los derechos reservados CRISTIAN ESTEBAN MAURE AUTOMOTRIZ.</h4>
+    </footer>
+    <script>
+        // Script para el menú hamburguesa
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

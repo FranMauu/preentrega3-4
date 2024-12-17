@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Taller Automotriz CEMA - Especialistas en mecánica automotriz y personalización de vehículos." />
+    <meta name="keywords" content="taller, automotriz, mecánica, repuestos, trabajos recientes, pinturas, contacto" />
+    <title>Inicio - Taller Automotriz CEMA</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets\scss\style.css" />
+    <style>
+        /* Estilos para el menú hamburguesa */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: white;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px; /* Ajusta según la altura de tu header */
+                left: 0;
+            }
+
+            .nav-list.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Taller Automotriz CEMA</h1>
+    </header>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav nav-list">
+            <li><a class="nav-link text-white" href="index.html">Inicio</a></li>
+            <li><a class="nav-link text-white" href="pages/repuestos.html">Repuestos</a></li>
+            <li><a class="nav-link text-white" href="pages/trabajos_recientes.html">Trabajos Recientes</a></li>
+            <li><a class="nav-link text-white" href="pages/pinturas.html">Pinturas</a></li>
+            <li><a class="nav-link text-white" href="pages/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="hero-content">
+                <h2>Bienvenido a CEMA, Taller Automotriz</h2>
+                <p>Selecciona una sección del menú para navegar.</p>
+            </div>
+        </section>
+
+        <section class="periodicobody">
+            <h3 class="epico">Las Leyendas de CEMA</h3>
+            <p class="periodico">
+                En el corazón de las pintorescas tierras de Mendoza, se encontraba un
+                taller de mecánica legendario conocido como CEMA: Centro de
+                Especialización en Mecánica Automotriz. Los hermanos Cristian y Turco
+                Maure dirigían este taller con pasión y habilidad, convirtiéndolo en
+                el lugar al que acudían los amantes de la velocidad en la región.
+            </p>
+            <p class="periodico">
+                En las noches, cuando las calles se volvían silenciosas, las picadas
+                de la Valle se convertían en el escenario de emocionantes carreras.
+                Los hermanos Maure, junto con su talentoso mecánico Diego, se
+                dedicaban a preparar vehículos para estos desafíos clandestinos, donde
+                la velocidad era la única ley.
+            </p>
+            <p class="periodico">
+                Uno de los proyectos más impresionantes que salió de las manos de los
+                hermanos Maure fue un Gacel Turbo con una monstruosa potencia de 600 caballos de fuerza. Este pequeño auto, aparentemente inocente por fuera, era una bestia devoradora de asfalto una vez que los hermanos Maure terminaban de ajustarlo en CEMA.
+            </p>
+            <p class="periodico">
+                Pero no era solo el Gacel Turbo el que asombraba a los espectadores de las picadas. Diego Maure, el maestro de la mecánica clásica, se había encargado de restaurar y modificar una antigua Fiat Rural del año 1973. Con 280 caballos de fuerza rugiendo bajo el capó, esta reliquia de cuatro ruedas se había transformado en un fenómeno de la velocidad, capaz de desafiar a los autos más modernos en las carreras de la Valle.
+            </p>
+            <p class="periodico">
+                Las noches de las picadas eran emocionantes para los hermanos Maure y su equipo en CEMA. Desde los preparativos meticulosos hasta el rugido de los motores en la línea de salida, cada carrera era una prueba de habilidad y determinación. Y aunque las picadas pudieran ser peligrosas, para los hermanos Maure, era una pasión que corría por sus venas.
+            </p>
+            <p class="periodico">
+                A medida que el eco de las carreras resonaba en las colinas de Mendoza, el nombre de CEMA se volvía sinónimo de velocidad y audacia en la región. Los hermanos Maure y su equipo habían convertido un modesto taller de mecánica en el epicentro de la emoción automotriz en las noches de la Valle.
+            </p>
+        </section>
+
+        <section class="imagenauto">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/gacel.jpg" controls width="50%" alt="Gacel Turbo" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/gacelrpm.jpg" controls width="50%" alt="Gacel Turbo" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/motorgacel.jpg" controls width="50%" alt="Gacel Turbo" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/ruralext.jpg" controls width="50%" alt="Fiat Rural 125" />
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/rural.jpg" controls width="50%" alt="Fiat Rural 125" />
+                </div>
+            </div>
+        </section>
+        <br />
+
+        <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </main>
+
+    <footer>
+        <h4>
+            &copy; 2024 CEMA. Todos los derechos reservados CRISTIAN ESTEBAN MAURE
+            AUTOMOTRIZ.
+        </h4>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+
+        // Script para el menú hamburguesa
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

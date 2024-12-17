@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra los mejores repuestos para tu vehículo en CEMA, desde llantas hasta frenos de alto rendimiento.">
+    <meta name="keywords" content="repuestos, llantas, frenos, automotriz, CEMA">
+    <title>Repuestos - Taller Automotriz CEMA</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets\scss\style.css" />
+    <style>
+        /* Estilos para el menú hamburguesa */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: white;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-list {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px; /* Ajusta según la altura de tu header */
+                left: 0;
+            }
+
+            .nav-list.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Repuestos</h1>
+    </header>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav nav-list">
+            <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="repuestos.html">Repuestos</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="trabajos_recientes.html">Trabajos Recientes</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="pinturas.html">Pinturas</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="catalogo">
+            <div class="categoria">
+                <h3>Llantas</h3>
+                <div class="trabajo">
+                    <h4>Llanta A</h4>
+                    <img width="50%" src="../images/imagen-llanta-a.jpg" alt="Llanta A">
+                    <h3>Estas llantas son el epítome de la innovación en el mundo del tuning. Con un diseño aerodinámico vanguardista y una estructura reforzada, estas llantas están diseñadas para ofrecer un rendimiento excepcional en condiciones extremas. Su composición de aleación de alta resistencia garantiza una durabilidad incomparable, mientras que su patrón de agarre único maximiza la tracción en todo tipo de terrenos. Ya sea en las curvas cerradas de un circuito o en las calles de la ciudad, estas llantas proporcionan un aspecto agresivo y un rendimiento inigualable que hará que tu vehículo modificado destaque entre la multitud.</h3>
+                </div>
+                <div class="trabajo">
+                    <h4>Llanta B</h4>
+                    <img width="50%" src="../images/imagen-llanta-b.jpg" alt="Llanta B">
+                    <h3>Diseñadas para los entusiastas del automovilismo que buscan un estilo distintivo y un rendimiento excepcional, estas llantas deportivas son la elección perfecta para cualquier vehículo personalizado. Con un diseño elegante y deportivo que combina a la perfección con la estética única de tu vehículo, estas llantas están fabricadas con los más altos estándares de calidad y precisión. Su construcción ligera y resistente garantiza una respuesta ágil y una conducción suave, mientras que su diseño optimizado mejora la eficiencia aerodinámica y la refrigeración de los frenos. Ya sea en la pista o en la carretera, estas llantas destacarán tanto por su apariencia impecable como por su rendimiento excepcional.</h3>
+                </div>
+            </div>
+            <div class="categoria">
+                <h3>Frenos</h3>
+                <div class="trabajo">
+                    <h4>Frenos A</h4>
+                    <img width="50%" src="../images/imagen-freno-a.jpg" alt="Freno A">
+                    <h3>Los frenos Brembo son sinónimo de calidad y rendimiento inigualables, y esta versión de alto rendimiento no es una excepción. Diseñados para ofrecer un frenado potente y preciso en las condiciones más exigentes, estos frenos son la elección definitiva para los conductores que buscan un rendimiento superior en la pista y en la carretera. Fabricados con materiales de la más alta calidad y tecnología de vanguardia, estos frenos proporcionan una respuesta instantánea y una modulación precisa, lo que garantiza un control total en cualquier situación. Además, su diseño innovador y su construcción robusta ofrecen una disipación de calor óptima, lo que reduce la posibilidad de fatiga del freno y garantiza un rendimiento constante en cada frenada.</h3>
+                </div>
+                <div class="trabajo">
+                    <h4>Frenos B</h4>
+                    <img width="50%" src="../images/imagen-freno-b.jpg" alt="Freno B">
+                    <h3>Diseñado para los pilotos más exigentes y las condiciones más extremas, este sistema de frenos Brembo de competición es la elección definitiva para aquellos que buscan el máximo rendimiento en la pista. Con componentes de alta resistencia y tecnología de vanguardia, estos frenos ofrecen una potencia de frenado excepcional y una modulación precisa en cada curva y recta. Su diseño ligero y aerodinámico minimiza la masa no suspendida, lo que mejora la agilidad y la capacidad de respuesta del vehículo. Además, su capacidad de disipación de calor superior garantiza un rendimiento constante incluso en las condiciones más exigentes de la competición. Con estos frenos Brembo de competición, estarás un paso adelante en cada carrera.</h3>
+                </div>
+            </div>
+        </section>
+        <section id="formulario">
+            <h2>¿No encuentras el repuesto que buscas? ¡Déjanos tus datos!</h2>
+            <form action="procesar-formulario.php" method="POST" enctype="multipart/form-data">
+                <label for="nombre">Nombre del Repuesto:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="descripcion">Descripción:</label><br>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+                <label for="imagen">Imagen del Repuesto:</label><br>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h4>&copy; 2024 CEMA. Todos los derechos reservados CRISTIAN ESTEBAN MAURE AUTOMOTRIZ.</h4>
+    </footer>
+    <script>
+        // Script para el menú hamburguesa
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
+
